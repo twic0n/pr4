@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Ошибки ассертов",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*"
+  },
+  {
+    "name": "Таймауты / синхронизация",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(TimeoutException|NoSuchElementException).*"
+  },
+  {
+    "name": "Проблемы с алертами/окнами",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(NoAlertPresentException|NoSuchWindowException).*"
+  }
+]
